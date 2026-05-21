@@ -1,0 +1,41 @@
+{
+  "name": "@ungap/map-extensions",
+  "version": "0.0.0",
+  "description": "Latest `getOrInsert` and `getOrInsertComputed` Map and WeakMap extensions",
+  "main": "index.js",
+  "module": "index.js",
+  "type": "module",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "Map",
+    "WeakMap",
+    "getOrInsert",
+    "getOrInsertComputed"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ungap/map-extensions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ungap/map-extensions/issues"
+  },
+  "homepage": "https://github.com/ungap/map-extensions#readme"
+}
