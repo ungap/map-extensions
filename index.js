@@ -1,6 +1,6 @@
-((protos, defineProperty) => {
-  for (let i = 0; i < protos.length; i++) {
-    const proto = protos[i];
+((classes, defineProperty) => {
+  for (let proto, i = 0; i < classes.length; i++) {
+    proto = classes[i].prototype;
 
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/getOrInsert
     if (!('getOrInsert' in proto)) {
@@ -34,4 +34,4 @@
       });
     }
   }
-})([Map.prototype, WeakMap.prototype], Object.defineProperty);
+})([Map, WeakMap], Object.defineProperty);
